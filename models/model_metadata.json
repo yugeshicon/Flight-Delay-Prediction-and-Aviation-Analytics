@@ -1,0 +1,134 @@
+{
+  "timestamp": "2026-10-03T23:42:43.781536",
+  "champion_model": "LightGBM",
+  "sample_size_trained": 142804,
+  "test_size": 0.2,
+  "comparison_metrics": [
+    {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.63,
+      "precision": 0.2768,
+      "recall": 0.6184,
+      "f1_score": 0.3824,
+      "roc_auc": 0.6723,
+      "pr_auc": 0.3325,
+      "confusion_matrix": {
+        "true_negatives": 14721,
+        "false_positives": 8549,
+        "false_negatives": 2019,
+        "true_positives": 3272
+      }
+    },
+    {
+      "model_name": "Decision Tree",
+      "accuracy": 0.6817,
+      "precision": 0.3149,
+      "recall": 0.6107,
+      "f1_score": 0.4155,
+      "roc_auc": 0.7009,
+      "pr_auc": 0.3851,
+      "confusion_matrix": {
+        "true_negatives": 16240,
+        "false_positives": 7030,
+        "false_negatives": 2060,
+        "true_positives": 3231
+      }
+    },
+    {
+      "model_name": "Random Forest",
+      "accuracy": 0.6975,
+      "precision": 0.3307,
+      "recall": 0.618,
+      "f1_score": 0.4308,
+      "roc_auc": 0.7232,
+      "pr_auc": 0.4128,
+      "confusion_matrix": {
+        "true_negatives": 16651,
+        "false_positives": 6619,
+        "false_negatives": 2021,
+        "true_positives": 3270
+      }
+    },
+    {
+      "model_name": "LightGBM",
+      "accuracy": 0.7039,
+      "precision": 0.342,
+      "recall": 0.6473,
+      "f1_score": 0.4475,
+      "roc_auc": 0.7494,
+      "pr_auc": 0.4482,
+      "confusion_matrix": {
+        "true_negatives": 16680,
+        "false_positives": 6590,
+        "false_negatives": 1866,
+        "true_positives": 3425
+      }
+    }
+  ],
+  "regression_metrics": {
+    "mae_mins": 46.08,
+    "rmse_mins": 85.29
+  },
+  "top_features": [
+    {
+      "feature": "Day_Of_Month",
+      "importance": 972.0
+    },
+    {
+      "feature": "CRSElapsedTime",
+      "importance": 472.0
+    },
+    {
+      "feature": "Day_Of_Week",
+      "importance": 461.0
+    },
+    {
+      "feature": "Distance",
+      "importance": 434.0
+    },
+    {
+      "feature": "Depart_Hour",
+      "importance": 388.0
+    },
+    {
+      "feature": "Airline_DL",
+      "importance": 87.0
+    },
+    {
+      "feature": "Airline_F9",
+      "importance": 64.0
+    },
+    {
+      "feature": "Airline_AA",
+      "importance": 57.0
+    },
+    {
+      "feature": "Origin_DCA",
+      "importance": 53.0
+    },
+    {
+      "feature": "Origin_DFW",
+      "importance": 51.0
+    },
+    {
+      "feature": "Origin_ORD",
+      "importance": 49.0
+    },
+    {
+      "feature": "Dest_DFW",
+      "importance": 48.0
+    },
+    {
+      "feature": "Dest_DCA",
+      "importance": 46.0
+    },
+    {
+      "feature": "Peak_Hour",
+      "importance": 44.0
+    },
+    {
+      "feature": "Origin_LAS",
+      "importance": 44.0
+    }
+  ]
+}
